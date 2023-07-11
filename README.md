@@ -38,7 +38,7 @@ Now we can use ```quicktype``` to generate model files for a range of supported 
 quicktype --src-lang schema --lang go --out go/td-parser.go schemas/td-schema.json
 ```
 
-The above command will generate model files for the go programming language.
+The above command will generate model files for the go programming language. To generate models for a different language, provide a matching keyword to the ```--lang``` argument and change the name of the output directory/file extension.
 
 ```
 quicktype --src-lang schema --lang go --out go/modbus-parser.go schemas/modbus.schema.json
