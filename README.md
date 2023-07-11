@@ -52,7 +52,7 @@ Now you have your model files in your language sub-dicrectory, but the Modbus fo
 
 ```go
 type FormElementProperty struct {
-	ModbusForm
+	ModbusForm          // manually inserted this line to make available the Modbus form fields
 	Op                  *FormElementPropertyOp          `json:"op"`
 	AdditionalResponses []AdditionalResponsesDefinition `json:"additionalResponses,omitempty"`
 	ContentCoding       *string                         `json:"contentCoding,omitempty"`
